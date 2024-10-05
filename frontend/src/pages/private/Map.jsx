@@ -16,6 +16,7 @@ const Map = () => {
   const [userLongitude, setUserLongitude] = useState(0);
   const [nasaEvents, setNasaEvents] = useState([]);
   const nasaAPI = "https://eonet.gsfc.nasa.gov/api/v3/events";
+  const lineRef = useRef(null);
 
   const fetchNASAOENETData = async () => {
     try {
@@ -242,6 +243,23 @@ const Map = () => {
       </div>
     `;
   };
+
+  useEffect(() => {
+    if (userMarkerRef.current && eventMarkerRef.current) {
+      const userLatLng = userMarkerRef.current.getLatLng();
+      const eventLatLng = eventMarkerRef.current.getLatLng();
+
+      if (!lineRef.current) {
+        lineRef.current = L.polyline([userLatLng, eventLatLng], {
+          color: "red",
+          weight: 3,
+          dashArray: [5, 5], // Optional: Add a dashed line style
+        }).addTo(mapRef.current);
+      } else {
+        lineRef.current.setLatLngs([userLatLng, eventLatLng]);
+      }
+    }
+  }, [userMarkerRef, eventMarkerRef]);
 
   return (
     <div id="map" className="w-full h-full" style={{ height: "100vh" }}></div>
