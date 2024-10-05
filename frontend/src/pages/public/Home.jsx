@@ -3,7 +3,6 @@ import NaturalDisastersOverTime from "../../components/public/NaturalDisastersOv
 import ClimateChangeDisasters from "../../components/public/ClimateChangeDisasters";
 import EconomicImpactChart from "../../components/public/EconomicImpact";
 import ResponseTimesChart from "../../components/public/ResponseTimes";
-import SeasonalPatternsDisasters from "../../components/public/SeasonalPatterns";
 
 const Home = () => {
   return (
