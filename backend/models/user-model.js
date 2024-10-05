@@ -5,16 +5,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  mobile: {
-    type: String,
-    required: true,
-    unique: true,
-    minlength: 10,
-  },
-  countryCode: {
-    type: String,
-    required: true,
-  },
   email: {
     type: String,
     required: true,
