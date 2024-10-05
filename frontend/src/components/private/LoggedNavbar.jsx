@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { handleSuccess } from "../../utils/Toast";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, User, LogOut, Menu, X } from "lucide-react";
+import { MapPin, User, LogOut, Menu, X, Leaf } from "lucide-react";
 
 const LoggedNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,6 +26,7 @@ const LoggedNavbar = () => {
   const menuItems = [
     { title: "Profile", href: "/profile", icon: User },
     { title: "Map", href: "/map", icon: MapPin },
+    { title: "Carbon Footprint", href: "/carbon", icon: Leaf },
   ];
 
   const navVariants = {

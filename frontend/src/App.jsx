@@ -11,6 +11,7 @@ import LoggedNavbar from "./components/private/LoggedNavbar";
 import Profile from "./pages/private/Profile";
 import Map from "./pages/private/Map";
 import { ToastContainer } from "react-toastify";
+import CarbonFootprint from "./pages/private/CarbonFootprint";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -66,6 +67,16 @@ const App = () => {
         <PrivateRoutes>
           <LoggedNavbar />
           <Map />
+          <ToastContainer />
+        </PrivateRoutes>
+      ),
+    },
+    {
+      path: "/carbon",
+      element: (
+        <PrivateRoutes>
+          <LoggedNavbar />
+          <CarbonFootprint />
           <ToastContainer />
         </PrivateRoutes>
       ),
