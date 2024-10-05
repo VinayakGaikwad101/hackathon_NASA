@@ -143,8 +143,5 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
-# ... existing .gitignore content ...
-
 .env
-!/backend/.env
 node_modules
