@@ -10,7 +10,6 @@ import {
   useMap,
 } from "react-leaflet";
 
-// Icon imports (assuming these are defined in a separate file)
 import {
   userIcon,
   fireIcon,
