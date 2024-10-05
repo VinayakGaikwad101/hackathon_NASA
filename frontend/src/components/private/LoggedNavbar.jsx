@@ -184,7 +184,7 @@ const LoggedNavbar = () => {
                 >
                   <Link
                     to={item.href}
-                    className="block text-white py-2 px-4 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 ease-in-out flex items-center"
+                    className="text-white py-2 px-4 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 ease-in-out flex items-center"
                     onClick={toggleMenu}
                   >
                     <item.icon className="mr-2 h-5 w-5" />
