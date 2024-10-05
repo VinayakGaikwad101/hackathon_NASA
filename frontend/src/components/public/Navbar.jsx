@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/about" className="text-white">
-              About
+              HeatMap
             </Link>
           </li>
           <li>
@@ -71,7 +71,7 @@ const Navbar = () => {
           </li>
           <li className="py-2">
             <Link to="/about" className="text-white">
-              About
+              HeatMap
             </Link>
           </li>
           <li className="py-2">
