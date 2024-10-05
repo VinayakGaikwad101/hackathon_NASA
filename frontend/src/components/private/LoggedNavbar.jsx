@@ -77,8 +77,8 @@ const LoggedNavbar = () => {
             </Link>
           </li>
           <li className="py-2">
-            <Link to="/view-profile" className="text-white">
-              View Profile
+            <Link to="/map" className="text-white">
+              Map
             </Link>
           </li>
           <li className="py-2">
