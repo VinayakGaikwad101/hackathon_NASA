@@ -49,3 +49,17 @@ npm install
 ```bash
 npm run start
 ```
+
+## References:
+
+### 1) NASA EONET API
+
+```bash
+https://eonet.gsfc.nasa.gov/api/v3/events
+```
+
+### 2) Leaflet Docs
+
+```bash
+https://leafletjs.com/reference.html
+```
