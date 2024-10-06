@@ -54,6 +54,8 @@
 
 ### \* Clone this github repository on your local machine
 
+### \* Replace the example.env file your own .env file with the same contents for your mongodb database and port (3000) in the backend directory
+
 ### \* open 2 terminals in your code editor
 
 ## To run the frontend:
